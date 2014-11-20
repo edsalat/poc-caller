@@ -1,0 +1,15 @@
+package org.gradle;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import com.thomson.poc_caller.Person;
+
+public class PersonTest {
+    @Test
+    public void canConstructAPersonWithAName() {
+        Person person = new Person("Larry");
+        assertEquals("Larry", person.getName());
+    }
+}
